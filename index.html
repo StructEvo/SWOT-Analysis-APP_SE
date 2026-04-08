@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWOT Analysis App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>SWOT Analysis</h1>
+      <div class="header-actions">
+        <input
+          type="text"
+          id="analysis-title"
+          class="analysis-title-input"
+          placeholder="Enter analysis title…"
+          aria-label="Analysis title"
+        />
+        <button id="btn-clear" class="btn btn-secondary" title="Clear all items">
+          Clear All
+        </button>
+        <button id="btn-print" class="btn btn-primary" title="Print or save as PDF">
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="swot-grid" id="swot-grid">
+
+      <!-- Strengths -->
+      <section class="quadrant strengths" data-quadrant="strengths">
+        <div class="quadrant-header">
+          <span class="quadrant-icon" aria-hidden="true">💪</span>
+          <h2>Strengths</h2>
+          <span class="quadrant-hint">Internal &amp; Helpful</span>
+        </div>
+        <ul class="item-list" id="list-strengths" aria-label="Strengths list"></ul>
+        <div class="add-item-row">
+          <input
+            type="text"
+            class="item-input"
+            id="input-strengths"
+            placeholder="Add a strength…"
+            aria-label="New strength"
+          />
+          <button class="btn btn-add" data-quadrant="strengths" aria-label="Add strength">+</button>
+        </div>
+      </section>
+
+      <!-- Weaknesses -->
+      <section class="quadrant weaknesses" data-quadrant="weaknesses">
+        <div class="quadrant-header">
+          <span class="quadrant-icon" aria-hidden="true">⚠️</span>
+          <h2>Weaknesses</h2>
+          <span class="quadrant-hint">Internal &amp; Harmful</span>
+        </div>
+        <ul class="item-list" id="list-weaknesses" aria-label="Weaknesses list"></ul>
+        <div class="add-item-row">
+          <input
+            type="text"
+            class="item-input"
+            id="input-weaknesses"
+            placeholder="Add a weakness…"
+            aria-label="New weakness"
+          />
+          <button class="btn btn-add" data-quadrant="weaknesses" aria-label="Add weakness">+</button>
+        </div>
+      </section>
+
+      <!-- Opportunities -->
+      <section class="quadrant opportunities" data-quadrant="opportunities">
+        <div class="quadrant-header">
+          <span class="quadrant-icon" aria-hidden="true">🚀</span>
+          <h2>Opportunities</h2>
+          <span class="quadrant-hint">External &amp; Helpful</span>
+        </div>
+        <ul class="item-list" id="list-opportunities" aria-label="Opportunities list"></ul>
+        <div class="add-item-row">
+          <input
+            type="text"
+            class="item-input"
+            id="input-opportunities"
+            placeholder="Add an opportunity…"
+            aria-label="New opportunity"
+          />
+          <button class="btn btn-add" data-quadrant="opportunities" aria-label="Add opportunity">+</button>
+        </div>
+      </section>
+
+      <!-- Threats -->
+      <section class="quadrant threats" data-quadrant="threats">
+        <div class="quadrant-header">
+          <span class="quadrant-icon" aria-hidden="true">🔥</span>
+          <h2>Threats</h2>
+          <span class="quadrant-hint">External &amp; Harmful</span>
+        </div>
+        <ul class="item-list" id="list-threats" aria-label="Threats list"></ul>
+        <div class="add-item-row">
+          <input
+            type="text"
+            class="item-input"
+            id="input-threats"
+            placeholder="Add a threat…"
+            aria-label="New threat"
+          />
+          <button class="btn btn-add" data-quadrant="threats" aria-label="Add threat">+</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Changes are saved automatically in your browser.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

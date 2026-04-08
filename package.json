@@ -1,0 +1,18 @@
+{
+  "name": "swot-analysis-app",
+  "version": "1.0.0",
+  "description": "A simple SWOT Analysis web application",
+  "main": "app.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --testEnvironment jsdom",
+    "lint": "echo 'No lint configured'"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {}
+  }
+}
